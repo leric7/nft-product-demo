@@ -1,0 +1,1 @@
+export { ProductReceived } from './ProductReceived'
