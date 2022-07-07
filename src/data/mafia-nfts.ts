@@ -1,9 +1,9 @@
-import mafia1Image from '@assets/media/mafia/1.svg'
-import mafia2Image from '@assets/media/mafia/2.svg'
-import mafia3Image from '@assets/media/mafia/3.svg'
-import mafia4Image from '@assets/media/mafia/4.svg'
-import mafia5Image from '@assets/media/mafia/5.svg'
-import mafia6Image from '@assets/media/mafia/6.svg'
+import mafia1Image from '@assets/media/8-bit/1.svg'
+import mafia2Image from '@assets/media/8-bit/2.svg'
+import mafia3Image from '@assets/media/8-bit/3.svg'
+import mafia4Image from '@assets/media/8-bit/4.svg'
+import mafia5Image from '@assets/media/8-bit/5.svg'
+import mafia6Image from '@assets/media/8-bit/6.svg'
 
 export type MafiaNFT = {
   id: number

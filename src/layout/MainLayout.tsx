@@ -1,8 +1,8 @@
 import eightBitMafiaImage from '@assets/brand/8-bit-mafia.svg'
 import bannerImage from '@assets/media/banner.svg'
-import { Avatar, Grid, Image, Layout, Space, Typography } from 'antd'
-import styled from 'styled-components'
+import { Avatar, Layout, Typography } from 'antd'
 import { FC, PropsWithChildren } from 'react'
+import styled from 'styled-components'
 
 const { Header, Footer, Content } = Layout
 const { Text } = Typography
@@ -22,16 +22,18 @@ export const MainLayout: FC<PropsWithChildren> = ({ children }) => {
           height: 200,
         }}
       >
-        <LogoWrapper>
-          <Avatar
-            src={<img src={eightBitMafiaImage} style={{ objectFit: 'contain' }} />}
-            style={{ backgroundColor: '#28ED29', padding: 8 }}
-            size={40}
-          />
-          <Text strong style={{ lineHeight: '22px' }}>
-            8-bit mafia
-          </Text>
-        </LogoWrapper>
+        <a href="https://www.eightbitmafia.com/" target="_blank" rel="noreferrer">
+          <LogoWrapper>
+            <Avatar
+              src={<img src={eightBitMafiaImage} style={{ objectFit: 'contain' }} />}
+              style={{ backgroundColor: '#28ED29', padding: 8 }}
+              size={40}
+            />
+            <Text strong style={{ lineHeight: '22px' }}>
+              8-bit mafia
+            </Text>
+          </LogoWrapper>
+        </a>
       </Header>
       <Content>
         <ContentWrapper>{children}</ContentWrapper>
@@ -47,19 +49,26 @@ export const MainLayout: FC<PropsWithChildren> = ({ children }) => {
       >
         <div>
           <FooterText type="secondary">Powered by </FooterText>
-          <FooterText>RareCircles. All Rights Reserved.</FooterText>
+          <a href="https://www.rarecircles.com/" target="_blank" rel="noreferrer">
+            <FooterText>RareCircles. All Rights Reserved.</FooterText>
+          </a>
         </div>
         <div>
           <FooterText type="secondary">
             Use of the service and website is subject to our&nbsp;
           </FooterText>
-          <a href="/terms" target="_blank">
+          <a
+            href="https://store.rarecircles.com/terms-of-services"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FooterText>Terms of Use</FooterText>
           </a>
           <FooterText type="secondary"> and </FooterText>
-          <a href="/privacy-policy" target="_blank">
-            <FooterText>Privacy Statement.</FooterText>
+          <a href="https://store.rarecircles.com/privacy-policy" target="_blank" rel="noreferrer">
+            <FooterText>Privacy Statement</FooterText>
           </a>
+          <FooterText>.</FooterText>
         </div>
       </Footer>
     </Layout>
@@ -84,6 +93,7 @@ const ContentWrapper = styled.div`
 `
 
 const FooterText = styled(Text)`
+  font-family: 'Inter', sans-serif;
   font-size: 12px;
   line-height: 20px;
   font-weight: 500;

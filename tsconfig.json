@@ -19,7 +19,10 @@
     "paths": {
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
-      "@layout/*": ["layout/*"]
+      "@context/*": ["context/*"],
+      "@data/*": ["data/*"],
+      "@layout/*": ["layout/*"],
+      "@types/*": ["types/*"]
     }
   },
   "include": ["src"],

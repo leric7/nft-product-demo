@@ -1,0 +1,1 @@
+export { ProductClaimed } from './ProductClaimed'
