@@ -1,9 +1,9 @@
 declare var window: any
 
-import { WalletInfo, WalletType } from '@types/ether'
 import { useWeb3React } from '@web3-react/core'
 import { InjectedConnector } from '@web3-react/injected-connector'
 import React, { useContext, useEffect, useState } from 'react'
+import { WalletInfo, WalletType } from 'types/ether'
 
 interface WalletContextType {
   unlockWallet: (providerName: WalletType, onError?: () => void, onComplete?: () => void) => void

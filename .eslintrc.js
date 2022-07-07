@@ -15,14 +15,6 @@ module.exports = {
     ecmaVersion: 6,
   },
   plugins: ['react', 'standard', '@typescript-eslint', 'import'],
-  // settings: {
-  //   'import/resolver': {
-  //     node: {
-  //       extensions: ['.tsx', '.ts', '.js', '.json'],
-  //     },
-  //     alias: [['@', './src']],
-  //   },
-  // },
   rules: {
     semi: 0,
     indent: 0,

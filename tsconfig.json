@@ -21,8 +21,7 @@
       "@components/*": ["components/*"],
       "@context/*": ["context/*"],
       "@data/*": ["data/*"],
-      "@layout/*": ["layout/*"],
-      "@types/*": ["types/*"]
+      "@layout/*": ["layout/*"]
     }
   },
   "include": ["src"],

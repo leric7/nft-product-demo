@@ -2,10 +2,10 @@ import { ReactComponent as CoinbaseIcon } from '@assets/brand/coinbase.svg'
 import { ReactComponent as MetaMaskIcon } from '@assets/brand/metamask.svg'
 import { ReactComponent as RareCirclesIcon } from '@assets/brand/rare-circles.svg'
 import { useWallet } from '@context/wallet'
-import { getErrorMessageForFailedWalletConnection, WalletType } from '@types/ether'
 import { Button, Modal, ModalProps, Popover, Typography } from 'antd'
 import { FC, useState } from 'react'
 import styled from 'styled-components'
+import { getErrorMessageForFailedWalletConnection, WalletType } from 'types/ether'
 
 export const ConnectWalletModal: FC<ModalProps> = props => {
   const { unlockWallet } = useWallet()
